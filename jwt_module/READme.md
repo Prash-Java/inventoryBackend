@@ -15,3 +15,4 @@ select * from jwt_db.user_role;
 spring.jpa.hibernate.ddl-auto=create is true: then use,
 initRolesAndUser() in userController and userService() => else if: spring.jpa.hibernate.ddl-auto=update,
 then do not use it
+This will be execute the moment application is build, since in userController we have used annotation @PostConstruct
